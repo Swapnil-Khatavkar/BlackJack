@@ -3,6 +3,8 @@
 
 int Card::GetValue()
 {
+    return static_cast<int>(m_rank);
+    /*
     switch (m_rank)
     {
         case Rank::ace:     return 11;  break;
@@ -21,7 +23,7 @@ int Card::GetValue()
         default:
             return 0;
             break;
-    }
+    }*/
 }
 
 std::string_view Card::GetSuitString(Suit suit)

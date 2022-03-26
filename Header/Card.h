@@ -19,8 +19,8 @@ class Card
 
         enum class Rank
         {
-            ace,
-            two,
+            ace = 11,
+            two = 2,
             three,
             four,
             five,
@@ -29,10 +29,10 @@ class Card
             eight,
             nine,
             ten,
-            jack,
-            queen,
-            king,
-            max_rank
+            jack = ten,
+            queen = ten,
+            king = ten,
+            max_rank = 13
         };
  
     private:
